@@ -55,7 +55,7 @@
 			fixed4 frag(v2f i) : SV_Target
 			{
 				float3 normal = normalize(i.worldNormal);
-				return fixed4(normal, 1);
+				return fixed4(normal, 1) * 0.5 + 0.5;
 			}
 
 			ENDCG
