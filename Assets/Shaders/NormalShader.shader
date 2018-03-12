@@ -55,8 +55,7 @@
 			fixed4 frag(v2f i) : SV_Target
 			{
 				float3 normal = normalize(i.worldNormal);
-                fixed4 color = fixed4(normal, 1);
-                return color;
+				return fixed4(normal, 1);
 			}
 
 			ENDCG
